@@ -49,6 +49,7 @@ reload
 ~fastOptJS
 xit
 exit
+<<<<<<< HEAD
 compile stage
 sbt stage
 stage
@@ -59,3 +60,5 @@ compile stage;
 compile stage
 exit
 ~fastOptJS
+=======
+>>>>>>> parent of a50eeae... Added stage for heroku

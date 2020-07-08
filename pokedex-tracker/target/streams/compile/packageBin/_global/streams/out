@@ -1,21 +1,11 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\pokedex-tracker_sjs1_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\pokedex-tracker_2.13-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$$anonfun$makeImgInputs$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$$anonfun$makeImgInputs$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$Pokemon.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$Pokemon.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$Pokemon.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$Pokemon.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$User.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$User.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$User.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp$User.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp.sjsir[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\MainApp.sjsir[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\classes\Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
