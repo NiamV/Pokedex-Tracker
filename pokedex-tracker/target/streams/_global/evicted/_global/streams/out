@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m"not up to date. inChanged = true, force = true[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating [0m
+[0m[[0m[33mwarn[0m] [0m[0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* org.scala-js:scalajs-library_2.13:1.1.1 is selected over 1.0.0[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- default:pokedex-tracker_sjs1_2.13:0.1.0-SNAPSHOT   (depends on 1.1.1)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.scala-js:scalajs-dom_sjs1_2.13:1.0.0           (depends on 1.0.0)[0m
