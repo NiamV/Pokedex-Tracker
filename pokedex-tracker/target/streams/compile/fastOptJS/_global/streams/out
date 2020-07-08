@@ -1,18 +1,18 @@
 [0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\pokedex-tracker-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 156005 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 9702 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: 239412 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: false[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 39963 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 105 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 84061 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 131334 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 64381 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 2902 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 72255 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 61011 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 1244 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 415 -- invalidated: 3[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 987 -- invalidated: 62[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: 79237 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 241528 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 461728 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 52581 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 588169 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 127621 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 2707 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 390404 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 525569 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 60094 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 5111 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 78564 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 229647 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 21000 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 418[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 1049[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 284488 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 103360 us[0m

@@ -58,3 +58,4 @@ compile stage
 compile stage;
 compile stage
 exit
+~fastOptJS

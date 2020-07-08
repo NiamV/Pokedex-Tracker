@@ -170,4 +170,9 @@ object MainApp{
         val me = new User
         renderUser(me, target)
     }
+
+    // def main(args: Array[String]): Unit = {
+    //     println("Starting")
+    //     val d = document.createElement("div")
+    // }
 }
