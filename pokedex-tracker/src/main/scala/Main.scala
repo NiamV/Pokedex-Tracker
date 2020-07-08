@@ -163,6 +163,14 @@ object MainApp{
         }
     }
 
+    // @JSExport
+    // def main(target: html.Div) = {
+    //     println("Hi2")
+
+    //     val me = new User
+    //     renderUser(me, target)
+    // }
+
     def main(args: Array[String]): Unit = {
         println("Starting")
         val me = new User
