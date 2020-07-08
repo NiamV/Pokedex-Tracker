@@ -1,4 +1,3 @@
-let MainApp;
 (function(){
 'use strict';
 const $linkingInfo = Object.freeze({
@@ -703,6 +702,9 @@ const $d_O = new $TypeData().initClass({
   O: 1
 }, (void 0), (void 0), $is_O, $isArrayOf_O);
 $c_O.prototype.$classData = $d_O;
+const $s_LMainApp__main__AT__V = (function(args) {
+  $m_LMainApp$().main__AT__V(args)
+});
 const $p_LMainApp$__getColour$1__Z__T = (function($thiz, caught) {
   if (caught) {
     return "background-color:#abffcd"
@@ -944,7 +946,7 @@ class $c_LMainApp$ extends $c_O {
     const array$37 = [$$x66.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array$36))];
     return $$x67.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array$37)).render__Lorg_scalajs_dom_raw_Element()
   };
-  renderUser__LMainApp$User__Lorg_scalajs_dom_raw_HTMLDivElement__V(u, target) {
+  renderUser__LMainApp$User__Lorg_scalajs_dom_raw_Element__V(u, target) {
     let pokemon = u.LMainApp$User__f_pokes;
     let i = 1;
     while (true) {
@@ -969,15 +971,13 @@ class $c_LMainApp$ extends $c_O {
       }
     }
   };
-  main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
+  main__AT__V(args) {
     const this$2 = $m_s_Console$();
     const this$3 = this$2.out__Ljava_io_PrintStream();
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Hi2\n");
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Starting\n");
     const me = new $c_LMainApp$User();
-    this.renderUser__LMainApp$User__Lorg_scalajs_dom_raw_HTMLDivElement__V(me, target)
-  };
-  $js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(target) {
-    this.main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
+    const target = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("div");
+    this.renderUser__LMainApp$User__Lorg_scalajs_dom_raw_Element__V(me, target)
   };
   MainApp$$$anonfun$makeImgInputs$1__Lorg_scalajs_dom_raw_Event__LMainApp$User__I__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, u$1, id$1, inputImage$1) {
     const index = u$1.findPokemon__I__I(id$1);
@@ -992,10 +992,6 @@ class $c_LMainApp$ extends $c_O {
     const this$4 = $m_s_Console$();
     const this$5 = this$4.out__Ljava_io_PrintStream();
     this$5.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
-  };
-  "main"(arg) {
-    const prep0 = arg;
-    return this.$js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(prep0)
   };
 }
 const $d_LMainApp$ = new $TypeData().initClass({
@@ -12825,6 +12821,6 @@ const $d_sjs_js_WrappedArray = new $TypeData().initClass({
 });
 $c_sjs_js_WrappedArray.prototype.$classData = $d_sjs_js_WrappedArray;
 $L0 = new $c_RTLong(0, 0);
-MainApp = $m_LMainApp$();
+$s_LMainApp__main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
 }).call(this);
 //# sourceMappingURL=pokedex-tracker-fastopt.js.map

@@ -1,18 +1,18 @@
 [0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\target\scala-2.13\pokedex-tracker-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 461728 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 52581 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: 588169 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 807675 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 66088 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 952177 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 127621 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 206226 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 2707 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 390404 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 525569 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 60094 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 5111 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 78564 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 229647 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 21000 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 532227 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 764001 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 139580 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 7787 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 167163 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 928983 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 34865 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 418[0m
 [0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 1049[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: 284488 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 103360 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 1029042 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 139164 us[0m

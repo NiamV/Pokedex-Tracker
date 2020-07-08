@@ -5,7 +5,7 @@ import scala.scalajs.js.annotation.JSExportTopLevel
 import org.scalajs.dom.html
 import scalatags.JsDom.all._
 
-@JSExportTopLevel("MainApp")
+// @JSExportTopLevel("MainApp")
 object MainApp{
     type PokemonID = Int
 
@@ -148,7 +148,7 @@ object MainApp{
         ).render
     }
 
-    def renderUser(u: User, target: html.Div) = {
+    def renderUser(u: User, target: org.scalajs.dom.raw.Element) = {
         var pokemon = u.getPokes()
         var i = 1
 
@@ -163,16 +163,11 @@ object MainApp{
         }
     }
 
-    @JSExport
-    def main(target: html.Div) = {
-        println("Hi2")
-
+    def main(args: Array[String]): Unit = {
+        println("Starting")
         val me = new User
+        
+        val target = document.getElementById("div")
         renderUser(me, target)
     }
-
-    // def main(args: Array[String]): Unit = {
-    //     println("Starting")
-    //     val d = document.createElement("div")
-    // }
 }
