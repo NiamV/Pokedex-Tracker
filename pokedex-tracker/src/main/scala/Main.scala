@@ -130,6 +130,7 @@ object MainApp{
 
             pokemon = pokemon.drop(30)
             i += 1
+            
         }
     }
 
