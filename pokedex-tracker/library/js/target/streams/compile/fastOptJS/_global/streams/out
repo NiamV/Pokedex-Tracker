@@ -1,0 +1,18 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\library\js\target\scala-2.12\library-fastopt.js[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 161664 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 23035 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 273587 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 85210 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 205 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 243829 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 335803 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 20147 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 3083 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 33443 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate classes: 225140 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 72129 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 28[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 90[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 328167 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 95307 us[0m

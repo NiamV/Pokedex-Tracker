@@ -54,3 +54,7 @@ uit
 quit
 ecit
 exit
+reload
+~fastOptJS
+exit
+~fastOptJS
