@@ -1,1 +1,8 @@
 ~fastOptJS
+reload
+~fastOptJS
+reload
+<config-scope>:packageBin
+universal:packageBin
+exit
+~fastOptJS
