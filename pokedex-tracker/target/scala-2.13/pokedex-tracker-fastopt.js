@@ -1,3 +1,4 @@
+let Editing,MainApp;
 (function(){
 'use strict';
 const $linkingInfo = Object.freeze({
@@ -702,9 +703,38 @@ const $d_O = new $TypeData().initClass({
   O: 1
 }, (void 0), (void 0), $is_O, $isArrayOf_O);
 $c_O.prototype.$classData = $d_O;
-const $s_LMainApp__main__AT__V = (function(args) {
-  $m_LMainApp$().main__AT__V(args)
+class $c_LEditing$ extends $c_O {
+  main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
+    const this$2 = $m_s_Console$();
+    const this$3 = this$2.out__Ljava_io_PrintStream();
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Editing Time!!!\n");
+    const x = $m_LUsers$().LUsers$__f_me.printPokes__T();
+    const this$5 = $m_s_Console$();
+    const this$6 = this$5.out__Ljava_io_PrintStream();
+    this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+  };
+  $js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(target) {
+    this.main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
+  };
+  "main"(arg) {
+    const prep0 = arg;
+    return this.$js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(prep0)
+  };
+}
+const $d_LEditing$ = new $TypeData().initClass({
+  LEditing$: 0
+}, false, "Editing$", {
+  LEditing$: 1,
+  O: 1
 });
+$c_LEditing$.prototype.$classData = $d_LEditing$;
+let $n_LEditing$ = (void 0);
+function $m_LEditing$() {
+  if ((!$n_LEditing$)) {
+    $n_LEditing$ = new $c_LEditing$()
+  };
+  return $n_LEditing$
+}
 const $p_LMainApp$__getColour$1__Z__T = (function($thiz, caught) {
   if (caught) {
     return "background-color:#abffcd"
@@ -712,19 +742,19 @@ const $p_LMainApp$__getColour$1__Z__T = (function($thiz, caught) {
   return "background-color:#ffc2ad"
 });
 class $c_LMainApp$ extends $c_O {
-  makeImgInputs__LMainApp$User__ALMainApp$Pokemon__ALorg_scalajs_dom_raw_HTMLInputElement(u, pokes) {
+  makeImgInputs__LUser__ALPokemon__ALorg_scalajs_dom_raw_HTMLInputElement(u, pokes) {
     const inputs = $newArrayObject($d_Lorg_scalajs_dom_raw_HTMLInputElement.getArrayOf(), [30]);
     let i = 0;
     while ((i < pokes.u.length)) {
-      const id = pokes.get(i).LMainApp$Pokemon__f_id;
+      const id = pokes.get(i).LPokemon__f_id;
       const this$1 = pokes.get(i);
-      const c = this$1.LMainApp$Pokemon__f_isCaught;
+      const c = this$1.LPokemon__f_isCaught;
       const this$2 = $m_Lscalatags_JsDom$all$();
       const $$x1 = this$2.input__Lscalatags_JsDom$TypedTag();
       const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("image", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().src__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair((("https://www.cpokemon.com/pokes/home/" + id) + ".png"), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().style__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($p_LMainApp$__getColour$1__Z__T(this, c), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().height__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair(100, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_intPixelStyle), $m_Lscalatags_JsDom$all$().width__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair(100, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_intPixelStyle)];
       const inputImage = $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array)).render__Lorg_scalajs_dom_raw_Element();
       inputImage.onclick = ((u$1, id$1, inputImage$1) => ((arg1$2) => {
-        $m_LMainApp$().MainApp$$$anonfun$makeImgInputs$1__Lorg_scalajs_dom_raw_Event__LMainApp$User__I__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2, u$1, id$1, inputImage$1)
+        $m_LMainApp$().MainApp$$$anonfun$makeImgInputs$1__Lorg_scalajs_dom_raw_Event__LUser__I__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2, u$1, id$1, inputImage$1)
       }))(u, id, inputImage);
       inputs.set(i, inputImage);
       i = ((1 + i) | 0)
@@ -739,8 +769,8 @@ class $c_LMainApp$ extends $c_O {
     };
     return inputs
   };
-  makeTable__LMainApp$User__ALMainApp$Pokemon__Lorg_scalajs_dom_raw_HTMLTableElement(u, pokes) {
-    const urls = this.makeImgInputs__LMainApp$User__ALMainApp$Pokemon__ALorg_scalajs_dom_raw_HTMLInputElement(u, pokes);
+  makeTable__LUser__ALPokemon__Lorg_scalajs_dom_raw_HTMLTableElement(u, pokes) {
+    const urls = this.makeImgInputs__LUser__ALPokemon__ALorg_scalajs_dom_raw_HTMLInputElement(u, pokes);
     const this$1 = $m_Lscalatags_JsDom$all$();
     const $$x67 = this$1.table__Lscalatags_JsDom$TypedTag();
     const this$2 = $m_Lscalatags_JsDom$all$();
@@ -946,52 +976,88 @@ class $c_LMainApp$ extends $c_O {
     const array$37 = [$$x66.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array$36))];
     return $$x67.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array$37)).render__Lorg_scalajs_dom_raw_Element()
   };
-  renderUser__LMainApp$User__Lorg_scalajs_dom_raw_Element__V(u, target) {
-    let pokemon = u.LMainApp$User__f_pokes;
-    let i = 1;
+  renderUser__LUser__Lorg_scalajs_dom_raw_HTMLDivElement__V(u, target) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const $$x1 = this$1.input__Lscalatags_JsDom$TypedTag();
+    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("button", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Edit Pokemon", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+    const editButton = $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array)).render__Lorg_scalajs_dom_raw_Element();
+    editButton.onclick = ((arg1$2) => {
+      const this$7 = $m_s_Console$();
+      const this$8 = this$7.out__Ljava_io_PrintStream();
+      this$8.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Editing\n")
+    });
+    target.appendChild(editButton);
+    const xs = u.LUser__f_pokes;
+    const evidence$1 = $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($objectGetClass(xs).getComponentType__jl_Class());
+    let capacity = 0;
+    let size = 0;
+    let jsElems = null;
+    const elementClass = evidence$1.runtimeClass__jl_Class();
+    capacity = 0;
+    size = 0;
+    const isCharArrayBuilder = (elementClass === $d_C.getClassOf());
+    jsElems = [];
+    let i = 0;
+    while ((i < xs.u.length)) {
+      const x = xs.get(i);
+      const x$1 = $as_LPokemon(x);
+      if (x$1.LPokemon__f_isInList) {
+        const unboxedElem = (isCharArrayBuilder ? $uC(x) : ((x === null) ? elementClass.jl_Class__f_data.zero : x));
+        jsElems.push(unboxedElem)
+      };
+      i = ((1 + i) | 0)
+    };
+    const elemRuntimeClass = ((elementClass === $d_V.getClassOf()) ? $d_jl_Void.getClassOf() : (((elementClass === $d_sr_Null$.getClassOf()) || (elementClass === $d_sr_Nothing$.getClassOf())) ? $d_O.getClassOf() : elementClass));
+    let pokemon = $asArrayOf_LPokemon($makeNativeArrayWrapper(elemRuntimeClass.jl_Class__f_data.getArrayOf(), jsElems), 1);
+    let i$1 = 1;
     while (true) {
-      const xs = pokemon;
-      if ((!(xs.u.length === 0))) {
-        const this$3 = $m_Lscalatags_JsDom$all$();
-        const $$x1 = this$3.p__Lscalatags_JsDom$TypedTag();
+      const xs$1 = pokemon;
+      if ((!(xs$1.u.length === 0))) {
+        const this$16 = $m_Lscalatags_JsDom$all$();
+        const $$x2 = this$16.p__Lscalatags_JsDom$TypedTag();
         $m_Lscalatags_JsDom$all$();
-        const v = ("Box " + i);
-        const array = [new $c_Lscalatags_JsDom$StringFrag(v)];
-        target.appendChild($$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array)).render__Lorg_scalajs_dom_raw_Element());
-        const this$10 = $m_Lscalatags_JsDom$all$();
-        const xs$1 = pokemon;
-        const e = this.makeTable__LMainApp$User__ALMainApp$Pokemon__Lorg_scalajs_dom_raw_HTMLTableElement(u, $asArrayOf_LMainApp$Pokemon($m_sc_ArrayOps$().slice$extension__O__I__I__O(xs$1, 0, 30), 1));
-        target.appendChild(new $c_Lscalatags_LowPriorityImplicits$bindNode(this$10, e).Lscalatags_LowPriorityImplicits$bindNode__f_e);
-        const $$x2 = $m_sc_ArrayOps$();
+        const v = ("Box " + i$1);
+        const array$1 = [new $c_Lscalatags_JsDom$StringFrag(v)];
+        target.appendChild($$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag(new $c_sjsr_WrappedVarArgs(array$1)).render__Lorg_scalajs_dom_raw_Element());
+        const this$23 = $m_Lscalatags_JsDom$all$();
         const xs$2 = pokemon;
-        pokemon = $asArrayOf_LMainApp$Pokemon($$x2.drop$extension__O__I__O(xs$2, 30), 1);
-        i = ((1 + i) | 0)
+        const e = this.makeTable__LUser__ALPokemon__Lorg_scalajs_dom_raw_HTMLTableElement(u, $asArrayOf_LPokemon($m_sc_ArrayOps$().slice$extension__O__I__I__O(xs$2, 0, 30), 1));
+        target.appendChild(new $c_Lscalatags_LowPriorityImplicits$bindNode(this$23, e).Lscalatags_LowPriorityImplicits$bindNode__f_e);
+        const $$x3 = $m_sc_ArrayOps$();
+        const xs$3 = pokemon;
+        pokemon = $asArrayOf_LPokemon($$x3.drop$extension__O__I__O(xs$3, 30), 1);
+        i$1 = ((1 + i$1) | 0)
       } else {
         break
       }
     }
   };
-  main__AT__V(args) {
+  main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
     const this$2 = $m_s_Console$();
     const this$3 = this$2.out__Ljava_io_PrintStream();
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Starting\n");
-    const me = new $c_LMainApp$User();
-    const target = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("div");
-    this.renderUser__LMainApp$User__Lorg_scalajs_dom_raw_Element__V(me, target)
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Hi2\n");
+    const me = $m_LUsers$().LUsers$__f_me;
+    this.renderUser__LUser__Lorg_scalajs_dom_raw_HTMLDivElement__V(me, target)
   };
-  MainApp$$$anonfun$makeImgInputs$1__Lorg_scalajs_dom_raw_Event__LMainApp$User__I__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, u$1, id$1, inputImage$1) {
+  $js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(target) {
+    this.main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
+  };
+  MainApp$$$anonfun$makeImgInputs$1__Lorg_scalajs_dom_raw_Event__LUser__I__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, u$1, id$1, inputImage$1) {
     const index = u$1.findPokemon__I__I(id$1);
-    const p = u$1.LMainApp$User__f_pokes;
+    const p = u$1.LUser__f_pokes;
+    p.get(index).updateCaught__V();
     const this$1 = p.get(index);
-    this$1.LMainApp$Pokemon__f_isCaught = (!this$1.LMainApp$Pokemon__f_isCaught);
-    const this$2 = p.get(index);
-    const c = this$2.LMainApp$Pokemon__f_isCaught;
+    const c = this$1.LPokemon__f_isCaught;
     inputImage$1.style = $p_LMainApp$__getColour$1__Z__T(this, c);
     inputImage$1.height = "100";
     const x = u$1.printPokes__T();
-    const this$4 = $m_s_Console$();
-    const this$5 = this$4.out__Ljava_io_PrintStream();
-    this$5.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+    const this$3 = $m_s_Console$();
+    const this$4 = this$3.out__Ljava_io_PrintStream();
+    this$4.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+  };
+  "main"(arg) {
+    const prep0 = arg;
+    return this.$js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(prep0)
   };
 }
 const $d_LMainApp$ = new $TypeData().initClass({
@@ -1008,234 +1074,290 @@ function $m_LMainApp$() {
   };
   return $n_LMainApp$
 }
-class $c_LMainApp$Pokemon extends $c_O {
-  constructor(id) {
-    super();
-    this.LMainApp$Pokemon__f_id = 0;
-    this.LMainApp$Pokemon__f_isCaught = false;
-    this.LMainApp$Pokemon__f_id = id;
-    this.LMainApp$Pokemon__f_isCaught = false
-  };
-}
-function $as_LMainApp$Pokemon(obj) {
-  return (((obj instanceof $c_LMainApp$Pokemon) || (obj === null)) ? obj : $throwClassCastException(obj, "MainApp$Pokemon"))
-}
-function $isArrayOf_LMainApp$Pokemon(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.LMainApp$Pokemon)))
-}
-function $asArrayOf_LMainApp$Pokemon(obj, depth) {
-  return (($isArrayOf_LMainApp$Pokemon(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "LMainApp$Pokemon;", depth))
-}
-const $d_LMainApp$Pokemon = new $TypeData().initClass({
-  LMainApp$Pokemon: 0
-}, false, "MainApp$Pokemon", {
-  LMainApp$Pokemon: 1,
-  O: 1
+const $ct_LPokemon__I__ = (function($thiz, id) {
+  $thiz.LPokemon__f_id = id;
+  $thiz.LPokemon__f_isCaught = false;
+  $thiz.LPokemon__f_isInList = true;
+  return $thiz
 });
-$c_LMainApp$Pokemon.prototype.$classData = $d_LMainApp$Pokemon;
-class $c_LMainApp$User extends $c_O {
+class $c_LPokemon extends $c_O {
   constructor() {
     super();
-    this.LMainApp$User__f_ids = null;
-    this.LMainApp$User__f_pokes = null;
-    $m_s_reflect_ManifestFactory$IntManifest$();
-    const destination = $newArrayObject($d_I.getArrayOf(), [50]);
-    const xsLen = destination.u.length;
-    const it = new $c_sci_RangeIterator(1, 1, 50, false);
-    let i = 0;
-    while (((i < xsLen) && it.sci_RangeIterator__f__hasNext)) {
-      destination.set(i, it.next__I());
-      i = ((1 + i) | 0)
-    };
-    this.LMainApp$User__f_ids = destination;
-    const xs = this.LMainApp$User__f_ids;
-    const f = ((this$7) => ((x$1$2) => {
-      const x$1 = $uI(x$1$2);
-      return new $c_LMainApp$Pokemon(x$1)
-    }))(this);
-    const len = xs.u.length;
-    const ys = $newArrayObject($d_LMainApp$Pokemon.getArrayOf(), [len]);
-    if ((len > 0)) {
-      let i$1 = 0;
-      if ($isArrayOf_O(xs, 1)) {
-        const x2 = $asArrayOf_O(xs, 1);
-        while ((i$1 < len)) {
-          const $$x1 = i$1;
-          const arg1 = x2.get(i$1);
-          ys.set($$x1, f(arg1));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ((xs !== null)) {
-        while ((i$1 < len)) {
-          const $$x2 = i$1;
-          const arg1$1 = xs.get(i$1);
-          ys.set($$x2, f(arg1$1));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_D(xs, 1)) {
-        const x4 = $asArrayOf_D(xs, 1);
-        while ((i$1 < len)) {
-          const $$x3 = i$1;
-          const arg1$2 = x4.get(i$1);
-          ys.set($$x3, f(arg1$2));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_J(xs, 1)) {
-        const x5 = $asArrayOf_J(xs, 1);
-        while ((i$1 < len)) {
-          const $$x4 = i$1;
-          const t = x5.get(i$1);
-          const lo = t.RTLong__f_lo;
-          const hi = t.RTLong__f_hi;
-          ys.set($$x4, f(new $c_RTLong(lo, hi)));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_F(xs, 1)) {
-        const x6 = $asArrayOf_F(xs, 1);
-        while ((i$1 < len)) {
-          const $$x5 = i$1;
-          const arg1$3 = x6.get(i$1);
-          ys.set($$x5, f(arg1$3));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_C(xs, 1)) {
-        const x7 = $asArrayOf_C(xs, 1);
-        while ((i$1 < len)) {
-          const $$x6 = i$1;
-          const arg1$4 = x7.get(i$1);
-          ys.set($$x6, f($bC(arg1$4)));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_B(xs, 1)) {
-        const x8 = $asArrayOf_B(xs, 1);
-        while ((i$1 < len)) {
-          const $$x7 = i$1;
-          const arg1$5 = x8.get(i$1);
-          ys.set($$x7, f(arg1$5));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_S(xs, 1)) {
-        const x9 = $asArrayOf_S(xs, 1);
-        while ((i$1 < len)) {
-          const $$x8 = i$1;
-          const arg1$6 = x9.get(i$1);
-          ys.set($$x8, f(arg1$6));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else if ($isArrayOf_Z(xs, 1)) {
-        const x10 = $asArrayOf_Z(xs, 1);
-        while ((i$1 < len)) {
-          const $$x9 = i$1;
-          const arg1$7 = x10.get(i$1);
-          ys.set($$x9, f(arg1$7));
-          i$1 = ((1 + i$1) | 0)
-        }
-      } else {
-        throw new $c_s_MatchError(xs)
+    this.LPokemon__f_id = 0;
+    this.LPokemon__f_isCaught = false;
+    this.LPokemon__f_isInList = false
+  };
+  updateCaught__V() {
+    this.LPokemon__f_isCaught = (!this.LPokemon__f_isCaught)
+  };
+}
+function $as_LPokemon(obj) {
+  return (((obj instanceof $c_LPokemon) || (obj === null)) ? obj : $throwClassCastException(obj, "Pokemon"))
+}
+function $isArrayOf_LPokemon(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.LPokemon)))
+}
+function $asArrayOf_LPokemon(obj, depth) {
+  return (($isArrayOf_LPokemon(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "LPokemon;", depth))
+}
+const $d_LPokemon = new $TypeData().initClass({
+  LPokemon: 0
+}, false, "Pokemon", {
+  LPokemon: 1,
+  O: 1
+});
+$c_LPokemon.prototype.$classData = $d_LPokemon;
+const $ct_LUser__ = (function($thiz) {
+  $m_s_reflect_ManifestFactory$IntManifest$();
+  const destination = $newArrayObject($d_I.getArrayOf(), [50]);
+  const xsLen = destination.u.length;
+  const it = new $c_sci_RangeIterator(1, 1, 50, false);
+  let i = 0;
+  while (((i < xsLen) && it.sci_RangeIterator__f__hasNext)) {
+    destination.set(i, it.next__I());
+    i = ((1 + i) | 0)
+  };
+  $thiz.LUser__f_ids = destination;
+  const xs = $thiz.LUser__f_ids;
+  const f = ((this$7) => ((x$1$2) => {
+    const x$1 = $uI(x$1$2);
+    return $ct_LPokemon__I__(new $c_LPokemon(), x$1)
+  }))($thiz);
+  const len = xs.u.length;
+  const ys = $newArrayObject($d_LPokemon.getArrayOf(), [len]);
+  if ((len > 0)) {
+    let i$1 = 0;
+    if ($isArrayOf_O(xs, 1)) {
+      const x2 = $asArrayOf_O(xs, 1);
+      while ((i$1 < len)) {
+        const $$x1 = i$1;
+        const arg1 = x2.get(i$1);
+        ys.set($$x1, f(arg1));
+        i$1 = ((1 + i$1) | 0)
       }
-    };
-    this.LMainApp$User__f_pokes = ys
+    } else if ((xs !== null)) {
+      while ((i$1 < len)) {
+        const $$x2 = i$1;
+        const arg1$1 = xs.get(i$1);
+        ys.set($$x2, f(arg1$1));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_D(xs, 1)) {
+      const x4 = $asArrayOf_D(xs, 1);
+      while ((i$1 < len)) {
+        const $$x3 = i$1;
+        const arg1$2 = x4.get(i$1);
+        ys.set($$x3, f(arg1$2));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_J(xs, 1)) {
+      const x5 = $asArrayOf_J(xs, 1);
+      while ((i$1 < len)) {
+        const $$x4 = i$1;
+        const t = x5.get(i$1);
+        const lo = t.RTLong__f_lo;
+        const hi = t.RTLong__f_hi;
+        ys.set($$x4, f(new $c_RTLong(lo, hi)));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_F(xs, 1)) {
+      const x6 = $asArrayOf_F(xs, 1);
+      while ((i$1 < len)) {
+        const $$x5 = i$1;
+        const arg1$3 = x6.get(i$1);
+        ys.set($$x5, f(arg1$3));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_C(xs, 1)) {
+      const x7 = $asArrayOf_C(xs, 1);
+      while ((i$1 < len)) {
+        const $$x6 = i$1;
+        const arg1$4 = x7.get(i$1);
+        ys.set($$x6, f($bC(arg1$4)));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_B(xs, 1)) {
+      const x8 = $asArrayOf_B(xs, 1);
+      while ((i$1 < len)) {
+        const $$x7 = i$1;
+        const arg1$5 = x8.get(i$1);
+        ys.set($$x7, f(arg1$5));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_S(xs, 1)) {
+      const x9 = $asArrayOf_S(xs, 1);
+      while ((i$1 < len)) {
+        const $$x8 = i$1;
+        const arg1$6 = x9.get(i$1);
+        ys.set($$x8, f(arg1$6));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else if ($isArrayOf_Z(xs, 1)) {
+      const x10 = $asArrayOf_Z(xs, 1);
+      while ((i$1 < len)) {
+        const $$x9 = i$1;
+        const arg1$7 = x10.get(i$1);
+        ys.set($$x9, f(arg1$7));
+        i$1 = ((1 + i$1) | 0)
+      }
+    } else {
+      throw new $c_s_MatchError(xs)
+    }
+  };
+  $thiz.LUser__f_pokes = ys;
+  return $thiz
+});
+class $c_LUser extends $c_O {
+  constructor() {
+    super();
+    this.LUser__f_ids = null;
+    this.LUser__f_pokes = null
   };
   findPokemon__I__I(id) {
     let index = 0;
-    while ((this.LMainApp$User__f_pokes.get(index).LMainApp$Pokemon__f_id !== id)) {
+    while ((this.LUser__f_pokes.get(index).LPokemon__f_id !== id)) {
       index = ((1 + index) | 0)
     };
     return index
   };
   printPokes__T() {
     const output = new $c_sr_ObjectRef("");
-    const xs = this.LMainApp$User__f_pokes;
-    const f = ((this$3, output$1) => ((p$2) => {
-      const p = $as_LMainApp$Pokemon(p$2);
+    const xs = this.LUser__f_pokes;
+    const evidence$1 = $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($objectGetClass(xs).getComponentType__jl_Class());
+    let capacity = 0;
+    let size = 0;
+    let jsElems = null;
+    const elementClass = evidence$1.runtimeClass__jl_Class();
+    capacity = 0;
+    size = 0;
+    const isCharArrayBuilder = (elementClass === $d_C.getClassOf());
+    jsElems = [];
+    let i = 0;
+    while ((i < xs.u.length)) {
+      const x = xs.get(i);
+      const x$2 = $as_LPokemon(x);
+      if (x$2.LPokemon__f_isInList) {
+        const unboxedElem = (isCharArrayBuilder ? $uC(x) : ((x === null) ? elementClass.jl_Class__f_data.zero : x));
+        jsElems.push(unboxedElem)
+      };
+      i = ((1 + i) | 0)
+    };
+    const elemRuntimeClass = ((elementClass === $d_V.getClassOf()) ? $d_jl_Void.getClassOf() : (((elementClass === $d_sr_Null$.getClassOf()) || (elementClass === $d_sr_Nothing$.getClassOf())) ? $d_O.getClassOf() : elementClass));
+    const xs$1 = $asArrayOf_O($makeNativeArrayWrapper(elemRuntimeClass.jl_Class__f_data.getArrayOf(), jsElems), 1);
+    const f = ((this$2$1, output$1) => ((p$2) => {
+      const p = $as_LPokemon(p$2);
       const $$x1 = $as_T(output$1.sr_ObjectRef__f_elem);
-      const this$4 = p.LMainApp$Pokemon__f_id;
-      output$1.sr_ObjectRef__f_elem = ($$x1 + ("" + this$4));
+      const this$8 = p.LPokemon__f_id;
+      output$1.sr_ObjectRef__f_elem = ($$x1 + ("" + this$8));
       output$1.sr_ObjectRef__f_elem = ($as_T(output$1.sr_ObjectRef__f_elem) + ": ");
       const $$x2 = $as_T(output$1.sr_ObjectRef__f_elem);
-      const this$6 = p.LMainApp$Pokemon__f_isCaught;
-      output$1.sr_ObjectRef__f_elem = ($$x2 + ("" + this$6));
+      const this$10 = p.LPokemon__f_isCaught;
+      output$1.sr_ObjectRef__f_elem = ($$x2 + ("" + this$10));
       output$1.sr_ObjectRef__f_elem = ($as_T(output$1.sr_ObjectRef__f_elem) + ", ")
     }))(this, output);
-    const len = xs.u.length;
-    let i = 0;
-    if ((xs !== null)) {
-      while ((i < len)) {
-        const arg1 = xs.get(i);
+    const len = xs$1.u.length;
+    let i$1 = 0;
+    if ((xs$1 !== null)) {
+      while ((i$1 < len)) {
+        const arg1 = xs$1.get(i$1);
         f(arg1);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_I(xs, 1)) {
-      const x3 = $asArrayOf_I(xs, 1);
-      while ((i < len)) {
-        const arg1$1 = x3.get(i);
+    } else if ($isArrayOf_I(xs$1, 1)) {
+      const x3 = $asArrayOf_I(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$1 = x3.get(i$1);
         f(arg1$1);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_D(xs, 1)) {
-      const x4 = $asArrayOf_D(xs, 1);
-      while ((i < len)) {
-        const arg1$2 = x4.get(i);
+    } else if ($isArrayOf_D(xs$1, 1)) {
+      const x4 = $asArrayOf_D(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$2 = x4.get(i$1);
         f(arg1$2);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_J(xs, 1)) {
-      const x5 = $asArrayOf_J(xs, 1);
-      while ((i < len)) {
-        const t = x5.get(i);
+    } else if ($isArrayOf_J(xs$1, 1)) {
+      const x5 = $asArrayOf_J(xs$1, 1);
+      while ((i$1 < len)) {
+        const t = x5.get(i$1);
         const lo = t.RTLong__f_lo;
         const hi = t.RTLong__f_hi;
         f(new $c_RTLong(lo, hi));
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_F(xs, 1)) {
-      const x6 = $asArrayOf_F(xs, 1);
-      while ((i < len)) {
-        const arg1$3 = x6.get(i);
+    } else if ($isArrayOf_F(xs$1, 1)) {
+      const x6 = $asArrayOf_F(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$3 = x6.get(i$1);
         f(arg1$3);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_C(xs, 1)) {
-      const x7 = $asArrayOf_C(xs, 1);
-      while ((i < len)) {
-        const arg1$4 = x7.get(i);
+    } else if ($isArrayOf_C(xs$1, 1)) {
+      const x7 = $asArrayOf_C(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$4 = x7.get(i$1);
         f($bC(arg1$4));
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_B(xs, 1)) {
-      const x8 = $asArrayOf_B(xs, 1);
-      while ((i < len)) {
-        const arg1$5 = x8.get(i);
+    } else if ($isArrayOf_B(xs$1, 1)) {
+      const x8 = $asArrayOf_B(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$5 = x8.get(i$1);
         f(arg1$5);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_S(xs, 1)) {
-      const x9 = $asArrayOf_S(xs, 1);
-      while ((i < len)) {
-        const arg1$6 = x9.get(i);
+    } else if ($isArrayOf_S(xs$1, 1)) {
+      const x9 = $asArrayOf_S(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$6 = x9.get(i$1);
         f(arg1$6);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
-    } else if ($isArrayOf_Z(xs, 1)) {
-      const x10 = $asArrayOf_Z(xs, 1);
-      while ((i < len)) {
-        const arg1$7 = x10.get(i);
+    } else if ($isArrayOf_Z(xs$1, 1)) {
+      const x10 = $asArrayOf_Z(xs$1, 1);
+      while ((i$1 < len)) {
+        const arg1$7 = x10.get(i$1);
         f(arg1$7);
-        i = ((1 + i) | 0)
+        i$1 = ((1 + i$1) | 0)
       }
     } else {
-      throw new $c_s_MatchError(xs)
+      throw new $c_s_MatchError(xs$1)
     };
     return $as_T(output.sr_ObjectRef__f_elem)
   };
 }
-const $d_LMainApp$User = new $TypeData().initClass({
-  LMainApp$User: 0
-}, false, "MainApp$User", {
-  LMainApp$User: 1,
+const $d_LUser = new $TypeData().initClass({
+  LUser: 0
+}, false, "User", {
+  LUser: 1,
   O: 1
 });
-$c_LMainApp$User.prototype.$classData = $d_LMainApp$User;
+$c_LUser.prototype.$classData = $d_LUser;
+class $c_LUsers$ extends $c_O {
+  constructor() {
+    super();
+    this.LUsers$__f_masterUser = null;
+    this.LUsers$__f_me = null;
+    $n_LUsers$ = this;
+    this.LUsers$__f_masterUser = new $c_LImmutableUser();
+    this.LUsers$__f_me = $ct_LUser__(new $c_LUser())
+  };
+}
+const $d_LUsers$ = new $TypeData().initClass({
+  LUsers$: 0
+}, false, "Users$", {
+  LUsers$: 1,
+  O: 1
+});
+$c_LUsers$.prototype.$classData = $d_LUsers$;
+let $n_LUsers$ = (void 0);
+function $m_LUsers$() {
+  if ((!$n_LUsers$)) {
+    $n_LUsers$ = new $c_LUsers$()
+  };
+  return $n_LUsers$
+}
 class $c_jl_Class extends $c_O {
   constructor(data0) {
     super();
@@ -3054,6 +3176,125 @@ function $m_Lscalatags_generic_Namespace$() {
   };
   return $n_Lscalatags_generic_Namespace$
 }
+class $c_LImmutablePokemon extends $c_LPokemon {
+  constructor(id) {
+    super();
+    $ct_LPokemon__I__(this, id)
+  };
+  updateCaught__V() {
+    this.LPokemon__f_isCaught = this.LPokemon__f_isCaught
+  };
+}
+const $d_LImmutablePokemon = new $TypeData().initClass({
+  LImmutablePokemon: 0
+}, false, "ImmutablePokemon", {
+  LImmutablePokemon: 1,
+  LPokemon: 1,
+  O: 1
+});
+$c_LImmutablePokemon.prototype.$classData = $d_LImmutablePokemon;
+class $c_LImmutableUser extends $c_LUser {
+  constructor() {
+    super();
+    this.LImmutableUser__f_masterPokes = null;
+    $ct_LUser__(this);
+    const xs = this.LUser__f_ids;
+    const f = ((this$2) => ((x$3$2) => {
+      const x$3 = $uI(x$3$2);
+      return new $c_LImmutablePokemon(x$3)
+    }))(this);
+    const len = xs.u.length;
+    const ys = $newArrayObject($d_LImmutablePokemon.getArrayOf(), [len]);
+    if ((len > 0)) {
+      let i = 0;
+      if ($isArrayOf_O(xs, 1)) {
+        const x2 = $asArrayOf_O(xs, 1);
+        while ((i < len)) {
+          const $$x1 = i;
+          const arg1 = x2.get(i);
+          ys.set($$x1, f(arg1));
+          i = ((1 + i) | 0)
+        }
+      } else if ((xs !== null)) {
+        while ((i < len)) {
+          const $$x2 = i;
+          const arg1$1 = xs.get(i);
+          ys.set($$x2, f(arg1$1));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_D(xs, 1)) {
+        const x4 = $asArrayOf_D(xs, 1);
+        while ((i < len)) {
+          const $$x3 = i;
+          const arg1$2 = x4.get(i);
+          ys.set($$x3, f(arg1$2));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_J(xs, 1)) {
+        const x5 = $asArrayOf_J(xs, 1);
+        while ((i < len)) {
+          const $$x4 = i;
+          const t = x5.get(i);
+          const lo = t.RTLong__f_lo;
+          const hi = t.RTLong__f_hi;
+          ys.set($$x4, f(new $c_RTLong(lo, hi)));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_F(xs, 1)) {
+        const x6 = $asArrayOf_F(xs, 1);
+        while ((i < len)) {
+          const $$x5 = i;
+          const arg1$3 = x6.get(i);
+          ys.set($$x5, f(arg1$3));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_C(xs, 1)) {
+        const x7 = $asArrayOf_C(xs, 1);
+        while ((i < len)) {
+          const $$x6 = i;
+          const arg1$4 = x7.get(i);
+          ys.set($$x6, f($bC(arg1$4)));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_B(xs, 1)) {
+        const x8 = $asArrayOf_B(xs, 1);
+        while ((i < len)) {
+          const $$x7 = i;
+          const arg1$5 = x8.get(i);
+          ys.set($$x7, f(arg1$5));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_S(xs, 1)) {
+        const x9 = $asArrayOf_S(xs, 1);
+        while ((i < len)) {
+          const $$x8 = i;
+          const arg1$6 = x9.get(i);
+          ys.set($$x8, f(arg1$6));
+          i = ((1 + i) | 0)
+        }
+      } else if ($isArrayOf_Z(xs, 1)) {
+        const x10 = $asArrayOf_Z(xs, 1);
+        while ((i < len)) {
+          const $$x9 = i;
+          const arg1$7 = x10.get(i);
+          ys.set($$x9, f(arg1$7));
+          i = ((1 + i) | 0)
+        }
+      } else {
+        throw new $c_s_MatchError(xs)
+      }
+    };
+    this.LImmutableUser__f_masterPokes = ys
+  };
+}
+const $d_LImmutableUser = new $TypeData().initClass({
+  LImmutableUser: 0
+}, false, "ImmutableUser", {
+  LImmutableUser: 1,
+  LUser: 1,
+  O: 1
+});
+$c_LImmutableUser.prototype.$classData = $d_LImmutableUser;
 const $p_jl_Character$__nonASCIIZeroDigitCodePoints$lzycompute__AI = (function($thiz) {
   if (((((16 & $thiz.jl_Character$__f_bitmap$0) << 24) >> 24) === 0)) {
     $thiz.jl_Character$__f_nonASCIIZeroDigitCodePoints = $makeNativeArrayWrapper($d_I.getArrayOf(), [1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3664, 3792, 3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216, 43264, 43472, 43600, 44016, 65296, 66720, 69734, 69872, 69942, 70096, 71360, 120782, 120792, 120802, 120812, 120822]);
@@ -10251,6 +10492,18 @@ const $p_Lscalatags_JsDom$all$__type$lzycompute__Lscalatags_generic_Attr = (func
   };
   return $thiz.Lscalatags_JsDom$all$__f_type
 });
+const $p_Lscalatags_JsDom$all$__value$lzycompute__Lscalatags_generic_Attr = (function($thiz) {
+  const b = $thiz.Lscalatags_JsDom$all$__f_bitmap$4;
+  const lo = (8388608 & b.RTLong__f_lo);
+  if ((lo === 0)) {
+    $thiz.Lscalatags_JsDom$all$__f_value = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr($thiz, "value", null, false);
+    const b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$4;
+    const lo$1 = (8388608 | b$1.RTLong__f_lo);
+    const hi = b$1.RTLong__f_hi;
+    $thiz.Lscalatags_JsDom$all$__f_bitmap$4 = new $c_RTLong(lo$1, hi)
+  };
+  return $thiz.Lscalatags_JsDom$all$__f_value
+});
 const $p_Lscalatags_JsDom$all$__style$lzycompute__Lscalatags_generic_Attr = (function($thiz) {
   const b = $thiz.Lscalatags_JsDom$all$__f_bitmap$4;
   const hi = (32 & b.RTLong__f_hi);
@@ -10739,6 +10992,15 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return $p_Lscalatags_JsDom$all$__type$lzycompute__Lscalatags_generic_Attr(this)
     } else {
       return this.Lscalatags_JsDom$all$__f_type
+    }
+  };
+  value__Lscalatags_generic_Attr() {
+    const b = this.Lscalatags_JsDom$all$__f_bitmap$4;
+    const lo = (8388608 & b.RTLong__f_lo);
+    if ((lo === 0)) {
+      return $p_Lscalatags_JsDom$all$__value$lzycompute__Lscalatags_generic_Attr(this)
+    } else {
+      return this.Lscalatags_JsDom$all$__f_value
     }
   };
   style__Lscalatags_generic_Attr() {
@@ -12821,6 +13083,7 @@ const $d_sjs_js_WrappedArray = new $TypeData().initClass({
 });
 $c_sjs_js_WrappedArray.prototype.$classData = $d_sjs_js_WrappedArray;
 $L0 = new $c_RTLong(0, 0);
-$s_LMainApp__main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
+Editing = $m_LEditing$();
+MainApp = $m_LMainApp$();
 }).call(this);
 //# sourceMappingURL=pokedex-tracker-fastopt.js.map

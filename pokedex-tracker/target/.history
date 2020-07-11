@@ -49,16 +49,8 @@ reload
 ~fastOptJS
 xit
 exit
-compile stage
-sbt stage
-stage
-reload
-evicted
-compile stage
-compile stage;
-compile stage
-exit
 ~fastOptJS
-exit
-~fastOptJS
+uit
+quit
+ecit
 exit

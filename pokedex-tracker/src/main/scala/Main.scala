@@ -5,50 +5,9 @@ import scala.scalajs.js.annotation.JSExportTopLevel
 import org.scalajs.dom.html
 import scalatags.JsDom.all._
 
-// @JSExportTopLevel("MainApp")
+@JSExportTopLevel("MainApp")
 object MainApp{
     type PokemonID = Int
-
-    class Pokemon(id: Int){
-        def getURL = {
-            s"https://www.cpokemon.com/pokes/home/$id.png"
-        }
-
-        def id(): Int = id
-
-        var isCaught: Boolean = false
-
-        def caught(): Boolean = isCaught
-        def updateCaught(): Unit = {
-            isCaught = !isCaught
-        }
-    }
-
-    class User{
-        val ids = (1 to 50).toArray
-
-        val pokes: Array[Pokemon] = ids.map(new Pokemon(_))
-        def getPokes(): Array[Pokemon] = pokes
-
-        def findPokemon(id: Int): Int = {
-            var index = 0
-            while(pokes(index).id != id){
-                index += 1
-            }
-            return index
-        }
-
-        def printPokes(): String = {
-            var output = ""
-            for(p <- pokes){
-                output += p.id.toString
-                output += ": "
-                output += p.caught.toString
-                output += ", "
-            }
-            return output
-        }
-    }
 
     def makeImgInputs(u: User, pokes: Array[Pokemon]): Array[org.scalajs.dom.html.Input] = {
         val inputs = new Array[org.scalajs.dom.html.Input](30)
@@ -148,8 +107,19 @@ object MainApp{
         ).render
     }
 
-    def renderUser(u: User, target: org.scalajs.dom.raw.Element) = {
-        var pokemon = u.getPokes()
+    def renderUser(u: User, target: html.Div) = {
+        val editButton = input(
+            `type`:="button",
+            value:="Edit Pokemon"
+        ).render
+
+        editButton.onclick = (e: dom.Event) => {
+            println("Editing")
+        }
+
+        target.appendChild(editButton)
+        
+        var pokemon = u.getPokes().filter(_.inList())
         var i = 1
 
         while(!pokemon.isEmpty){
@@ -163,19 +133,11 @@ object MainApp{
         }
     }
 
-    // @JSExport
-    // def main(target: html.Div) = {
-    //     println("Hi2")
+    @JSExport
+    def main(target: html.Div) = {
+        println("Hi2")
 
-    //     val me = new User
-    //     renderUser(me, target)
-    // }
-
-    def main(args: Array[String]): Unit = {
-        println("Starting")
-        val me = new User
-        
-        val target = document.getElementById("div")
+        val me = Users.me
         renderUser(me, target)
     }
 }

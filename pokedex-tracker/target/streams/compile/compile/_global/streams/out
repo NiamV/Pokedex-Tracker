@@ -1,7 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\src\main\scala\Main.scala:185:28: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : org.scalajs.dom.raw.Element[0m
-[0m[[0m[31merror[0m] [0m[0m required: org.scalajs.dom.html.Div[0m
-[0m[[0m[31merror[0m] [0m[0m    (which expands to)  org.scalajs.dom.raw.HTMLDivElement[0m
-[0m[[0m[31merror[0m] [0m[0m            renderUser(me, target)[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Niam\Desktop\Coding\PokemonScalaWebsite\pokedex-tracker\src\main\scala\Users.scala:60:18: incompatible type in overriding[0m
+[0m[[0m[31merror[0m] [0m[0mval pokes: Array[Pokemon] (defined in class User);[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[ImmutablePokemon][0m
+[0m[[0m[31merror[0m] [0m[0m required: Array[Pokemon][0m
+[0m[[0m[31merror[0m] [0m[0mNote: ImmutablePokemon <: Pokemon, but class Array is invariant in type T.[0m
+[0m[[0m[31merror[0m] [0m[0mYou may wish to investigate a wildcard type such as `_ <: Pokemon`. (SLS 3.2.10)[0m
+[0m[[0m[31merror[0m] [0m[0m    override val pokes: Array[ImmutablePokemon] = ids.map(new ImmutablePokemon(_))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
